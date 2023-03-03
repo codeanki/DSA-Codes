@@ -1,0 +1,11 @@
+bool hasCycle(ListNode*head){
+ListNode*slow= nhead, *fast = head;         // Initaialise slow and fast pointers to head
+
+while(fast!=NULL && fast->next!=NULL){
+    slow = slow->next;
+    fast = fast->next->next;
+    if(slow == fast)
+    return true;                            // cycle is detected
+ }
+    return false;                           // no cycle detected
+}

@@ -1,3 +1,5 @@
+Detect Cycle In The LinkedList
+1->2)_>3->4->5->null
 /*
 bool hasCycle(ListNode*head){
 ListNode*slow= nhead, *fast = head;         // Initaialise slow and fast pointers to head

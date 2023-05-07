@@ -1,0 +1,8 @@
+public static void postorder(BinaryTreeNode<Integer> root){
+  if(root == null){
+    return;
+  }
+  postorder(root.left);
+  postorder(root.right);
+  System.out.print(root.data + " "):
+}
